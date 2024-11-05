@@ -1,0 +1,87 @@
+/* Container styling */
+  
+  /* Left side - Payment details */
+  .paymentcontent .left {
+    /* flex: 2; */
+    width: 50%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .paymentcontent .left > div {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .saleTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .saleTable th, .saleTable td {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .saleTable thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .saleTable td {
+    font-size: 1rem;
+  }
+  
+  /* Right side - Form styling */
+  .paymentcontent .right {
+    /* flex: 1; */
+    width: 50%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formField, .formFields {
+    margin-bottom: 15px;
+  }
+  
+  .formField label, .formFields label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .formField input, .formFields select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .formField input::placeholder {
+    color: #888;
+  }
+  
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .flex.content {
+      flex-direction: column;
+    }
+  
+    .left, .right {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

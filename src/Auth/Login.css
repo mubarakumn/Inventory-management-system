@@ -1,0 +1,65 @@
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .form {
+    background-color: var(--dash-bg-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--shadow2);
+    min-width: 300px;
+    width: 450px;
+  }
+  
+  .form-heading h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--h-color);
+  }
+  
+  .formFields {
+    margin-bottom: 15px;
+  }
+  
+  .formFields input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--shadow2);
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--h-color);
+    background-color: var(--bg-color);
+  }
+  
+  .formFields input:focus {
+    outline: none;
+    border-color: var(--focus);
+    background-color: var(--bg-color);
+  }
+  
+  .formActions {
+    text-align: center;
+  }
+  
+  .formActions button {
+    width: 100%;
+    background-color: var(--brand-hover);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formActions button:hover {
+    background-color: var(--brand-hover);
+  }
+  

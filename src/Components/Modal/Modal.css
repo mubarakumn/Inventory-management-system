@@ -1,0 +1,87 @@
+/* Modal overlay for the dimmed background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--shadow2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Modal container */
+  .modal-content {
+    background: var(--bg-color);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 5px 15px var(--shadow);
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Heading */
+  .modal-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--h-color);
+  }
+  
+  /* Message text */
+  .modal-content p {
+    font-size: 1em;
+    color: var(--p-color);
+    margin-bottom: 1em;
+  }
+  
+  /* Buttons container */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+  }
+  
+  /* Individual button styles */
+  .modal-buttons button {
+    padding: 8px 16px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-buttons button:first-child {
+    background-color: var(--brand-hover); /* Red for delete/confirm */
+    color: var(--white);
+  }
+  
+  .modal-buttons button:last-child {
+    background-color: var(--p-color); /* Grey for cancel */
+    color: var(--white);
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .modal-content {
+      width: 95%;
+      padding: 15px;
+    }
+  }
+  

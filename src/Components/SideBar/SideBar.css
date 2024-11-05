@@ -1,0 +1,118 @@
+.sidebar {
+  width: 50px;
+  color: var(--white);
+  background-color: var(--brand);
+  padding: 20px 0;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  transition:  .5S ease-in;
+}
+.sidebar:hover{
+  width: 250px;
+}
+.sidebar:focus{
+  width: 250px;
+}
+.sidebar-header {
+  margin-bottom: 30px;
+}
+.sidebar-header h2 {
+  font-size: 24px;
+  text-align: center;
+  display: none;
+}
+.sidebar:hover .sidebar-header h2{
+  display: block;
+}
+
+.roledisplay {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2.5px 4px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--stats-bg);
+  border-radius: 2px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  font-weight: 550;
+  word-spacing: 2px;
+  letter-spacing: .25px;
+  padding-left: 5px;
+}
+.sidebar-menu span{
+  display: none;
+}
+.sidebar:hover .sidebar-menu span{
+  display: flex;
+  transition: all .5s ease-in-out;
+}
+.sidebar-menu li {
+  display: flex;
+  gap: 5px;
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar-menu li:hover {
+  background-color: var(--brand-hover);
+}
+.settings{
+  padding: 10px;
+  border-radius: 5px;
+  color: var(---color);
+  position: absolute;
+  background-color: var(--dash-bg-color);
+  top: 62%;
+  left: 13%;
+}
+.settings ul{
+  color: var(--white);
+  background-color: var(--brand);
+}
+.settings li{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.toggleView{
+    visibility: hidden;
+}
+.toggleView + label {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+    font-size: .8em;
+}
+.toggleView + label::before{
+  content: "";
+  height: 1em;
+  width: 2em;
+  margin-right: 5px;
+  border-radius: 2px;
+  background-color: var(--h-color);
+}
+.toggleView + label::after{
+  content: "";
+  height: .8em;
+  width: 0.8em;
+  border-radius: 2px;
+  background-color: var(--stats-bg);
+  position: absolute;
+  left: 125px;
+  transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+}
+.toggleView:checked + label::after{
+  transform: translateX(100%);
+}

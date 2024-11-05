@@ -1,0 +1,58 @@
+.receipt-container {
+    width: 58mm; /* Width for POS paper (can also use 80mm) */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    /* line-height: 1.5; */
+  }
+  
+  .receipt-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .receipt-details {
+    text-align: left;
+    margin-bottom: 2px;
+  }
+  .receipt-details p {
+    font-size: small;
+    margin: 10px 0;
+  }
+  
+  .receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  .receipt-table th, .receipt-table td {
+    border: 1px solid #000;
+    padding: 2px;
+    text-align: left;
+  }
+  
+  .receipt-footer {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .btn-print {
+    width: 60px;
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media print {
+    .btn-print {
+      display: none;
+    }
+  }
+  

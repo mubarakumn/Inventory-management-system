@@ -1,0 +1,71 @@
+.saleTable-container {
+  width: 100%;
+  max-height: 250px;
+  padding-top: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.saleTable {
+  color: var(--h-color);
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.saleTable td, th {
+  border: 1px solid var(--h-color);
+  text-align: left;
+  padding: 8px;
+}
+
+.saleTable thead {
+  color: var(--white);
+  background-color: var(--p-color);
+  border: none;
+  top: 0;
+  position: sticky;
+}
+.saleTable td:nth-child(1){
+  width: 25%;
+}
+.saleTable td:nth-child(2){
+  width: 20%;
+}
+.saleTable input {
+  padding: 2px 5px;
+  width: 100%;
+  color: var(--h-color);
+  background: var(--bg-color);
+  border-radius: 5px;
+}
+
+.saleTable button {
+  padding: 5px;
+  color: var(--white);
+  background-color: var(--stats-bg);
+  border-radius: 5px;
+  border: 1px solid var(--purple);
+}
+
+.saleTable .priceSpan {
+  font-size: small;
+  font-style: italic;
+  color: #808080;
+}
+.salesSelect{
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: end;
+  align-items: center;
+}
+.salesSelect select{
+  margin-bottom: 12px;
+}
+.selectContainer{
+  width: 30%;
+}
+.select{
+  width: 100%;
+  padding: 10px;
+}

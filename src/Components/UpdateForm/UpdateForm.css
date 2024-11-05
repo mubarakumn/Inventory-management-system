@@ -1,0 +1,89 @@
+.update-form {
+    padding: .5rem;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--p-color);
+    border-radius: 8px;
+    background-color: var(--dash-bg-color);
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-field {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+.form-field-pricing{
+    width: 100%;
+}
+.form-field-pricing .form-field{
+    width: 50%;
+}
+.form-group label {
+    font-weight: bold;
+    color: var(--h-color);
+    font-size: 0.95rem;
+    margin-left: 2px;
+}
+
+.form-group input, .form-group select {
+    padding: 0.5rem;
+    border: 1px solid var(--shadow2);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: var(--p-color);
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--focus);
+    outline: none;
+}
+ 
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+.form-actions button{
+    width: 50%;
+}
+.btn-cancel {
+    background-color: var(--brand-hover);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-cancel:hover {
+    background-color: #ff5252;
+}
+
+.btn-save {
+    background-color: var(--btn);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-save:hover {
+    background-color: var(--btn-hover);
+}

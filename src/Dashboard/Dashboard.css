@@ -1,0 +1,153 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  background-color: var(--dash-bg-color);
+  border-radius: 0px;
+  box-shadow: 0px 0px 10px var(--shadow);
+  transition: .5s ease-in-out;
+  overflow: hidden;
+  overflow-y: auto;
+}
+[data-view="smallView"]{
+  .dashboard-container{
+    min-height: 90vh;
+    max-height: 90vh;
+    width: 90vw;
+    border-radius: 12px;
+  }
+}
+.main-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.main-heading img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.main-content h1 {
+  font-size: 28px;
+  color: var(--h-color);
+  margin-bottom: 20px;
+}
+.main-content h5{
+  color: var(--light-blue);
+}
+.main-content p {
+  font-size: 16px;
+  color: var(--p-color);
+}
+
+.Activities {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.status {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.status .box {
+  font-weight: bold;
+  padding: 10px;
+  width: 150px;
+  height: 100px;
+  color: var(--h-color);
+  border-radius: 10px;
+  box-shadow: 0px 1.5px 5px var(--shadow2);
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+.status .box:hover{
+  transform: translateY(-5px);
+}
+.status .box:focus{
+  transform: translate(0);
+}
+.status .box:nth-child(odd){
+  border-bottom: 2px solid var(--purple);
+}
+.status .box:nth-child(even){
+  border-bottom: 2px solid var(--light-blue);
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hr {
+  height: 1px;
+  border: none;
+  background-color: var(--bg-color);
+}
+
+.actions .actionHead {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--h-color);
+}
+
+.actionButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.actionBtn {
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--white);
+  border: 1px solid var(--light-blue);
+  background:linear-gradient(40deg, var(--purple), var(--light-blue));
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.actionBtn:nth-child(even){
+  background:linear-gradient(40deg, var(--light-blue), var(--btn));
+}
+.actionBtn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-2px);
+}
+
+.actionBtn:active {
+  transform: translateY(0);
+}
+.details{
+  margin-top: 10px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--h-color);
+  /* background-color: var(--bg-color); */
+}
+.left{
+  width: 60%;
+}
+.left>div{
+  max-height: 350px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.right{
+  width: 40%;
+  max-height: 350px;
+  padding: 10px;
+  color: var(--h-color);
+  overflow: hidden;
+  overflow-y: auto;
+}
